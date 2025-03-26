@@ -81,24 +81,24 @@ header{
 
 main{
   height: 800px;
-  /* width: 1300px; */
   background: url(../image/back-img2.png) no-repeat center/cover fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
 }
 
 main:hover{
-  height: 800px;
-  background: url(../image/back-img3.png) no-repeat center/cover fixed;
-  transition: 0.35s;
-
+  background-image: url(../image/back-img3.png);
 }
 
 main .text{
-  position: absolute;
+  /* border: 1px solid #000; */
+  border-radius: 20px ;
+  padding: 15px;
   height: max-content;
   font-size: 25px;
-  background-color: transparent;
-  top: 430px;
-  left: 500px;
+  background-image: linear-gradient(to right, #fcb69f 0%, transparent 100%);
 }
 
 .text h2{
@@ -107,7 +107,7 @@ main .text{
 }
 
 .text a{
-  background-color: crimson;
+  background-color: rgb(241, 24, 68);
   margin-top: 20px;
   padding: 0 10px 5px 10px;
   border-radius: 15px;
@@ -127,7 +127,7 @@ main .text{
   text-transform: capitalize;
 }
 
-section .section-inner .text{  /* 전체제목 */
+.section-inner .text{  /* 전체제목 */
   text-align: center;
   padding: 20px 0;
   color: #333;
@@ -147,7 +147,6 @@ section .section-inner .text{  /* 전체제목 */
 #s2{
   background-color: beige;
   height: 1300px;
-
 }
 
 #s3{
@@ -156,35 +155,39 @@ section .section-inner .text{  /* 전체제목 */
 
 #s4{
   background: url(../image/back-image.JPG) no-repeat center/cover fixed;
-  height: 900px;
+  height: 800px;
 }
 
 #s5{
-  /* background-color:; */
   height: 900px;
+}
+
+#s6{
+  background-color: #fdd9c4;
+  height: 1000px;
 }
 
 #s1 .section-inner .text{
   padding: 100px;
 }
 
-
-.items div{
+#s1 .section-inner .items .item-1{
   border: 1px solid #000;
   margin: 20px;
   box-shadow: 3px 5px 15px rgba(0,0,0,0.2);
-  padding: 20px;
+  padding: 10px;
   background-color: #fff;
   transition: 0.35s;
+  font-size: 18px;
 }
 
-.items div img{
+#s1 .section-inner .items .item-1 img{
   width: 250px;
   height: 250px;
   background-color: #f3e7bf;
 }
 
-.items div:hover{
+#s1 .section-inner .items .item-1:hover{
   transform: scale(1.2);
 }
 
@@ -194,24 +197,24 @@ section .section-inner .text{  /* 전체제목 */
   padding: 100px 0 50px 0;
 }
 
-#s2 .reviews{
+#s2 .section-inner .reviews{
   display: flex;
   flex-direction: column;
   gap: 90px;
 }
 
-#s2 .review-top{
+#s2 .section-inner .reviews .review-top{
   display: flex;
   gap: 30px;
 }
 
-#s2 .review-bottom{
+#s2 .section-inner .reviews .review-bottom{
   display: flex;
   gap: 30px;
 }
 
-#s2 .review-top .review-1,
-#s2 .review-bottom .review-2{
+#s2 .section-inner .reviews .review-top .review-1,
+#s2 .section-inner .reviews .review-bottom .review-2{
   /* border: 1px solid red; */
   height: 400px;
   width: 100%;
@@ -220,8 +223,8 @@ section .section-inner .text{  /* 전체제목 */
   overflow: hidden;
 }
 
-#s2 .review-top .review-1 img,
-#s2 .review-bottom .review-2 img{
+#s2 .section-inner .reviews .review-top .review-1 img,
+#s2 .section-inner .reviews .review-bottom .review-2 img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -234,7 +237,6 @@ section .section-inner .text{  /* 전체제목 */
 
 .caption p:nth-of-type(1){
   color: gold;
-  size: 18px;
 }
 
 #s2 .review-top .review-1 .caption,
@@ -261,7 +263,6 @@ section .section-inner .text{  /* 전체제목 */
   display: flex;
   margin: 30px auto;
 }
-
 
 #s3 .section-inner .gallery{
   flex: 1;
@@ -297,7 +298,7 @@ section .section-inner .text{  /* 전체제목 */
   content: '';
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 50px;
   width: 25px;
   height: 25px;
   background-color: bisque;
@@ -349,7 +350,7 @@ section .section-inner .text{  /* 전체제목 */
 
 #s3 .section-inner .gallery:hover{flex: 3;}
 
-/* #s3 .section-inner .gallery:hover img{filter: grayscale();} 고민! */
+#s3 .section-inner .gallery:hover img{filter: grayscale();}
 
 #s3 .section-inner .gallery:hover .content{
   bottom: 0;
@@ -358,9 +359,7 @@ section .section-inner .text{  /* 전체제목 */
 
 #s4 .section-inner .text{
   /* border: 1px solid #000; */
-  /* margin-top: 200px; */
-  padding: 100px 0 100px 0;
-  
+  padding-top: 100px;
 }
 
 #s4 .section-inner .sns{
@@ -370,7 +369,6 @@ section .section-inner .text{  /* 전체제목 */
   background-color: beige;
   color: #333;
   margin: 50px;
-  padding: 120px;
   border-radius: 30px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
@@ -384,7 +382,7 @@ section .section-inner .text{  /* 전체제목 */
   background-color: #fff;
   font-size: 60px;
   border-radius: 50%;
-  margin: 0 30px;
+  margin: 0 50px;
   text-align: center;
   line-height: 110px;
   overflow: hidden;
@@ -397,15 +395,10 @@ section .section-inner .text{  /* 전체제목 */
   left: 0;
   width: 100%;
   height: 0;
-  background-color: blue;
   transition: 0.5s;
 }
 
-#s4 .section-inner .sns a:nth-child(1):before{background-color: yellowgreen;}
-#s4 .section-inner .sns a:nth-child(2):before{background-color: skyblue;}
-#s4 .section-inner .sns a:nth-child(3):before{background-color: orangered;}
-#s4 .section-inner .sns a:nth-child(4):before{background-color: palevioletred;}
-#s4 .section-inner .sns a:nth-child(5):before{background-color: purple;}
+#s4 .section-inner .sns a:nth-of-type(1):before{background-color: yellowgreen;}
 
 #s4 .section-inner .sns a .fa-solid{
   position: relative;
@@ -419,9 +412,48 @@ section .section-inner .text{  /* 전체제목 */
   transform: rotateY(360deg);
 }
 
+#s4 .section-inner .sns .sns-item{
+  padding: 100px 0 100px 0;
+  cursor: pointer;
+}
+
+#s4 .section-inner .sns .sns-item .sns-text{
+  text-align: center;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+#s4 .section-inner .sns .sns-item .sns-text em{
+  position: relative;
+  font-style: normal;
+  font-size: 18px;
+  color: #555;
+  display: block;
+}
+
+#s4 .section-inner .sns .sns-item .sns-text em:before{
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: brown;
+  transition: 0.5s;
+}
+
+#s4 .section-inner .sns .sns-item .sns-text em:hover:before{
+  width: 70%;
+}
+
+#s4 .section-inner .sns .sns-item .sns-text p{
+  font-size: 15px;
+}
+
 #s5 .section-inner .text{
   /* border: 1px solid #000; */
-  padding: 100px 0 100px 0;
+  padding: 70px 0 100px;
   line-height: 70px;
 }
 
@@ -439,17 +471,19 @@ section .section-inner .text{  /* 전체제목 */
 {
   border: 5px solid brown;
   border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
   margin: auto;
   width: 100%;
   height: 100%;
   padding: 20px;
+  transition: 0.35s;
 }
+
+#s5 .section-inner .services .service:hover{transform: translateY(-15px);}
 
 #s5 .section-inner .service .service-item img{
   width: 100%;
-  height: 100%;
-  
-}
+  height: 100%;}
 
 #s5 .section-inner .service .service-item b{
   font-size: 30px;
@@ -490,33 +524,43 @@ section .section-inner .text{  /* 전체제목 */
   transform: translate(5px, 5px);
 }
 
+#s6 .vedio{
+  text-align: center;
+  align-items: center;
+}
+
+#s6 .text{
+  /* border: 1px solid #000; */
+  padding: 100px 0 70px;
+}
+
 @keyframes title-ani{
-0%{transform: translateX(0)}
-100%{transform: translateX(-100%);}
-}
-
-.title-text{
-  border: 2px solid brown;
-  width: 100%;
-  margin-top: 112px;
-  display: flex;
-  white-space: nowrap;
-  font-size: 20px;
-  color: #999;
-  font-weight: bold;
-  overflow: hidden;
-}
-
-.title-text .title-wrap{
-  animation: title-ani 40s linear infinite;
-}
-
-.title-text:hover .title-wrap{
-  animation-play-state: paused;
-  cursor: pointer;
-}
-
-
+  0%{transform: translateX(0)}
+  100%{transform: translateX(-100%);}
+  }
+  
+  .title-text{
+    border: 2px solid rgb(165, 65, 65);
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    margin-top: 54px;
+    display: flex;
+    white-space: nowrap;
+    font-size: 20px;
+    color: #999;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  
+  .title-text .title-wrap{
+    animation: title-ani 40s linear infinite;
+  }
+  
+  .title-text:hover .title-wrap{
+    animation-play-state: paused;
+    cursor: pointer;
+  }
 /* Footer------------------------------------------------ */
 
 .footer-section{
@@ -531,4 +575,9 @@ section .section-inner .text{  /* 전체제목 */
   line-height: 30px;
   color: #ddd;
   padding: 20px 0 0 20px ;
+}
+
+.footer-section img{
+  width: 100px;
+  height: 60px;
 }
