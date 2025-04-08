@@ -97,12 +97,12 @@ main .text{
   border-radius: 20px ;
   padding: 15px;
   height: max-content;
-  font-size: 25px;
+  font-size: 30px;
   background-image: linear-gradient(to right, #fcb69f 0%, transparent 100%);
 }
 
 .text h2{
-  font-size: 30px;
+  font-size: 35px;
   color: crimson;
 }
 
@@ -172,7 +172,7 @@ main .text{
 }
 
 #s1 .section-inner .items .item-1{
-  border: 1px solid #000;
+  border: 1px solid #afafaf;
   margin: 20px;
   box-shadow: 3px 5px 15px rgba(0,0,0,0.2);
   padding: 10px;
@@ -540,7 +540,7 @@ main .text{
   }
   
   .title-text{
-    border: 2px solid rgb(165, 65, 65);
+    /* border: 2px solid rgb(165, 65, 65); */
     border-left: none;
     border-right: none;
     width: 100%;
@@ -548,7 +548,7 @@ main .text{
     display: flex;
     white-space: nowrap;
     font-size: 20px;
-    color: #999;
+    color: rgb(165, 65, 65);
     font-weight: bold;
     overflow: hidden;
   }
@@ -560,6 +560,12 @@ main .text{
   .title-text:hover .title-wrap{
     animation-play-state: paused;
     cursor: pointer;
+  }
+
+  iframe{
+    width: 1120px;
+    height: 630px;
+    border: 0;
   }
 /* Footer------------------------------------------------ */
 
